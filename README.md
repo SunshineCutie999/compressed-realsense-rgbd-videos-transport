@@ -34,24 +34,7 @@ git clone https://github.com/AreteQin/compressed-realsense-rgbd-videos-transport
 cd ..
 catkin build
 ```
-### Start ROS master
+### Run the launch file
 ```
-roscore
-```
-
-### open a new terminal and run the publisher
-```
-source ./devel/setup.bash
-rosrun compressed-realsense-rgbd-videos-transport publisher
-```
-
-### open a new terminal and run the receiver to subscribe raw image
-```
-source ./devel/setup.bash
-rosrun compressed-realsense-rgbd-videos-transport receiver _image_transport:=raw
-```
-
-### Run the receiver to subscribe compressed image
-```
-rosrun compressed-realsense-rgbd-videos-transport receiver _image_transport:=compressed
+roslaunch compressed_realsense_rgbd_videos_transport compressed_rgbd_transport.launch
 ```

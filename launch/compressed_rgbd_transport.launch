@@ -2,8 +2,8 @@
 
   <node name="publisher" pkg="compressed-realsense-rgbd-videos-transport" type="publisher" />
 
-  <node name="receiver" pkg="compressed-realsense-rgbd-videos-transport" type="receiver" launch-prefix="gnome-terminal -e" />
+  <node name="receiver" pkg="compressed-realsense-rgbd-videos-transport" type="receiver" args="_image_transport:=compressed" />
 
-  <node name="dynparam" pkg="dynamic_reconfigure" type="dynparam" args="set D435/depth/compressed format 'png'"/>
+  <node name="dynamic_parameter" pkg="dynamic_reconfigure" type="dynparam" args="set D435/depth/compressed format 'png'" />
 
 </launch>
