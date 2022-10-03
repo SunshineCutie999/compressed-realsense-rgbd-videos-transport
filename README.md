@@ -38,3 +38,8 @@ catkin build
 ```
 roslaunch compressed_realsense_rgbd_videos_transport compressed_rgbd_transport.launch
 ```
+
+### Change the depth image encoding
+```
+rosrun dynamic_reconfigure dynparam set /D435/depth/compressed format png
+```
