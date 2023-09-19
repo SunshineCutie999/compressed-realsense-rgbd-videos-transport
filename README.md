@@ -5,7 +5,9 @@ Transport compressed Realsense RGBD videos using ROS image_transport to reduce l
 
 ### Install dependencies
 #### OpenCV
-`sudo apt install libopencv-dev`
+```bash
+sudo apt install libopencv-dev
+```
 #### ROS
 https://www.ros.org/
 #### Realsense SDK
